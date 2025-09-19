@@ -5,11 +5,70 @@
     padding: 0;
     font-family: "League Spartan, sans-serif";
     text-decoration: none;
-    color: black;
+    color: rgb(1, 92, 93);
 }
 
 /*Police d'écriture des titres*/
 
-h1, h2 {
+h1,
+h2 {
     font-family: "Lexend Deca", sans-serif;
+}
+
+/*Suppression des puces des listes*/
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style: none;
+}
+
+/*Barre de Navigation*/
+
+nav {
+    background-color: aquamarine;
+    margin-bottom: 50px;
+}
+
+a:hover {
+    color: darkslategray;
+}
+
+.navlist {
+    display: flex
+}
+
+li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    font-family: "Big Shoulders, sans-serif";
+}
+
+nav img {
+    width: 60px;
+}
+
+/*section main => produits*/
+
+main {
+    background-image: url(media/backgroundimg.jpg);
+}
+
+main {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+figure img {
+    height: 240px;
+    width: 240px;
+}
+
+figcaption {
+    font-weight: 1000;
 }
