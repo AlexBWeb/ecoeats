@@ -76,6 +76,25 @@
     <!--Section de contact avec formulaire-->
     <section id="contact">
         <h2>SELECTIONNEZ VOS PRODUITS ET PAYEZ ICI</h2>
+                <form action="" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" name="name" required>
+            <label for="prénom">Prénom :</label>
+            <input type="text" name="prénom" required>
+            <fieldset>
+                <legend>Choisissez vôtre plat:</legend>
+            <select form required name="metier">
+                <option>La salade de Titi</option>
+                <option selected>La salade de Tata</option>
+                <option>La salade de Tonton</option>
+            </select>
+            </fieldset>
+            <label for="story">Instruction supplémentaires concernant votre commande : </label>
+            <textarea name="message" rows="8" cols="200">
+            Dites nous tout !</textarea>
+
+            <input type="submit">
+        </form>
     </section>
     <!--pied de page avec lien vers les pages secondaires, mention légales et réseaux sociaux-->
     <footer>
