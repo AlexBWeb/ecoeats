@@ -4,119 +4,117 @@
 
 <head>
     <title>Ecoeats</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="description" content="Ecoeats, la bouffe c'est la vie, mais c'est potable en bio aussi">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap"
-        rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 
-<body>
-    <!--En-tête et menu de navigation-->
-    <header id="top">
-        <nav>
-            <img src="/site/media/ecoeatslogo.png"
-                alt="logo Ecoeats, fourchette et couteau au design de feuille accompagné du nom Ecoeats" />
-            <ul class="navlist">
-                <li><a href="#top">RETOURNER EN HAUT</a></li>
-                <li><a href="#menu">COMMANDER</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-            <h1>Ecoeats, la vraie bonne bouffe c'est la vie, mais c'est potable en bio aussi !</h1>
-        </nav>
-    </header>
-    <!--section menu listant des produits avec photo et prix-->
-    <h2>NOS PRODUITS</h2>
-    <main id="menu">
-        <figure>
-            <img src="/site/media/bouffe1.jpg" alt="salade de légumes" />
-            <figcaption>La salade de Tata à 16€</figcaption>
-        </figure>
-        <figure>
-            <img src="/site/media/bouffe2.jpg" alt="salade de légumes" />
-            <figcaption>La salade de Tonton à 18€</figcaption>
-        </figure>
-        <figure>
-            <img src="/site/media/bouffe3.jpg" alt="salade de légumes" />
-            <figcaption>La salade de Titi à 14€</figcaption>
-        </figure>
-    </main>
-    <!--section à propos qui offre une brève description du service offert-->
-    <aside>
-        <h2>ET LES AUTRES, ILS EN PENSENT QUOI ?</h2>
-        <p>Vous trouverez chez nous des produits de qualité moyenne à un prix un peu moins moyen, mais ça en vaut la
-            peine, c'est bio. Et si c'est bio, c'est bien !</p>
-        <figure>
-            <blockquote>
-                <p>"Franchement, c'est mid"</p>
-            </blockquote>
-            <figcaption>
-                <cite>Judicaël, quand il a testé notre gamme incroyable de produit</cite>
-            </figcaption>
-        </figure>
-        <figure>
-            <blockquote>
-                <p>"Dégueulasse, je recommande !"</p>
-            </blockquote>
-            <figcaption>
-                <cite>Christine après avoir goûté notre salade Ecoeats !</cite>
-            </figcaption>
-        </figure>
-    </aside>
-    <!--section QçM, explication du processus de commande-->
-    <section>
-        <h2>VOUS VOULEZ COMMANDEZ ? SUIVEZ CES QUELQUES ÉTAPES</h2>
-        <p>Remplissez le formulaire si dessous dans la section contact, ajoutez le produit à votre panier, commandez, et
-            c'est réglé !</p>
-        <p>Profitez de notre large gamme de choix (3 pour être précis) et régalez vous parce que même si c'est pas BON,
-            c'est BIO !</p>
-        <p>Pour les boissons, buvez de l'eau, c'est BIO</p>
-    </section>
-    <!--Section de contact avec formulaire-->
-    <section id="contact">
-        <h2>SELECTIONNEZ VOS PRODUITS ET PAYEZ ICI</h2>
-        <form action="" method="post">
-            <label for="name">Nom :</label>
-            <input type="text" name="name" required>
-            <label for="prénom">Prénom :</label>
-            <input type="text" name="prénom" required>
-            <fieldset>
-                <legend>Choisissez vôtre plat:</legend>
-                <select form required name="metier">
-                    <option>La salade de Titi</option>
-                    <option selected>La salade de Tata</option>
-                    <option>La salade de Tonton</option>
-                </select>
-            </fieldset>
-            <label for="story">Instruction supplémentaires concernant votre commande : </label>
-            <textarea name="message" rows="8" cols="200">
+<body></body>
+<!--En-tête et menu de navigation-->
+<header id="top">
+    <nav>
+        <img src="/site/media/ecoeatslogo.png"
+            alt="logo Ecoeats, fourchette et couteau au design de feuille accompagné du nom Ecoeats">
+        <ul>
+            <li>
+                <a href="#top">TO THE
+                    TOP</a>
+            </li>
+            <li>
+                <a href="#menu">COMMANDER</a>
+            </li>
+            <li>
+                <a href="#contact">CONTACT</a>
+            </li>
+        </ul>
+        <h1>Ecoeats, la vraie bonne bouffe c'est la vie, mais c'est potable en bio
+            aussi !
+        </h1>
+    </nav>
+</header>
+<!--section menu listant des produits avec photo et prix-->
+<h2>NOS PRODUITS</h2>
+<main id="menu">
+    <article>
+        <img class="w-16 md:w-32 lg:w-48" src="/site/media/bouffe1.jpg" alt="salade de légumes" />
+    </article>
+    <figure>
+        <img class="w-16 md:w-32 lg:w-48" src="/site/media/bouffe2.jpg" alt="salade de légumes" />
+        </article>
+        <article>
+            <img class="w-16 md:w-32 lg:w-48" src="/site/media/bouffe3.jpg" alt="salade de légumes" />
+        </article>
+</main>
+<!--section à propos qui offre une brève description du service offert-->
+<aside>
+    <h2>ET LES AUTRES, ILS EN PENSENT QUOI ?</h2>
+    <p>Vous trouverez chez nous des produits de qualité moyenne à un prix un peu moins moyen, mais ça en
+        vaut la
+        peine, c'est bio. Et si c'est bio, c'est bien !</p>
+    <figure>
+        <blockquote>
+            <p>"Franchement, c'est mid"</p>
+        </blockquote>
+        <figcaption>
+            <cite>Judicaël, quand il a testé notre gamme incroyable de produit</cite>
+        </figcaption>
+    </figure>
+    <figure>
+        <blockquote>
+            <p>"Dégueulasse, je recommande !"</p>
+        </blockquote>
+        <figcaption>
+            <cite>Christine après avoir goûté notre salade Ecoeats !</cite>
+        </figcaption>
+    </figure>
+</aside>
+<!--section QçM, explication du processus de commande-->
+<section>
+    <h2>VOUS VOULEZ COMMANDEZ ? SUIVEZ CES QUELQUES ÉTAPES</h2>
+    <p>Remplissez le formulaire si dessous dans la section contact, ajoutez le produit à votre panier,
+        commandez, et
+        c'est réglé !</p>
+    <p>Profitez de notre large gamme de choix (3 pour être précis) et régalez vous parce que même si c'est
+        pas
+        BON,
+        c'est BIO !</p>
+    <p>Pour les boissons, buvez de l'eau, c'est BIO</p>
+</section>
+<!--Section de contact avec formulaire-->
+<section id="contact">
+    <h2>SELECTIONNEZ VOS PRODUITS ET PAYEZ ICI</h2>
+    <form action="" method="post">
+        <label for="name">Nom :</label>
+        <input type="text" name="name" required>
+        <label for="prénom">Prénom :</label>
+        <input type="text" name="prénom" required>
+        <fieldset>
+            <legend>Choisissez vôtre plat:</legend>
+            <select form required name="metier">
+                <option>La salade de Titi</option>
+                <option selected>La salade de Tata</option>
+                <option>La salade de Tonton</option>
+            </select>
+        </fieldset>
+        <label for="story">Instruction supplémentaires concernant votre commande : </label>
+        <textarea name="message" rows="8" cols="200">
             Dites nous tout !</textarea>
 
-            <input type="submit">
-        </form>
-    </section>
-    <!--pied de page avec lien vers les pages secondaires, mention légales et réseaux sociaux-->
-    <footer>
-        <p><a href="#top">Retournez en haut de la page</a></p>
-        <ul>
-            <li>Trouvez nous sur FACEBOOK</li>
-            <li>Trouvez nous sur INSTAGRAM</li>
-            <li>Trouvez nous sur TIKEUTOK</li>
-        </ul>
-        <p>Tout droits réservés ©</p>
-    </footer>
+        <input type="submit">
+    </form>
+</section>
+<!--pied de page avec lien vers les pages secondaires, mention légales et réseaux sociaux-->
+<footer>
+    <p><a href="#top">Retournez en haut de la page</a></p>
+    <ul>
+        <li>Trouvez nous sur FACEBOOK</li>
+        <li>Trouvez nous sur INSTAGRAM</li>
+        <li>Trouvez nous sur TIKEUTOK</li>
+    </ul>
+    <p>Tout droits réservés ©</p>
+</footer>
 </body>
 
 </html>
