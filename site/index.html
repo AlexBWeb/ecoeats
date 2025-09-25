@@ -5,6 +5,8 @@
 <head>
     <title>Ecoeats</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width">
+    <!--Import des polices et font-family directement dans le head car je n'ai pas réussi avec TailWind-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto+Condensed:wght@400;700&display=swap');
 
@@ -22,20 +24,55 @@
 <body class="bg-lime-50 text-gray-800">
     <!--En-tête et menu de navigation-->
 
-    <header id="top" class="bg-gradient-to-r from-lime-400 to-yellow-300 p-6 shadow-md">
-        <nav class="flex flex-col md:flex-row items-center justify-between gap-6 max-w-6xl mx-auto">
+    <header id="top" class="sticky top-0 z-50 bg-gradient-to-r from-lime-400 to-yellow-300 
+                 p-6 shadow-md">
+        <!--sticky top-0 => position:sticky - garde le header visible en haut lors du scroll
+      z-50 => z-index - quel élément sera affiché quand plusieurs éléments se superposent. Utile dans le cas du 
+      bg-gradient-to-r from-lime-400 to-yellow-300 =>  dégradé de vert clair à jaune
+      p-6 => padding
+      shadow-md => box-shadow - effet d'ombre-->
+        <nav class="flex flex-col md:flex-row items-center justify-between gap-6">
+            <!--flex => display: flex 
+            flex-col => flex-direction: column - les éléments du header sont en colonne grâce au display: flex et à la flex-direction
+            md: flex-row => media query + flex-direction:row - les éléments du header passent en ligne à partir de 768px de largeur d'écran
+            items-center => align-items: center - positionne les éléments au centre par rapport à l'axe secondaire, ici vertical
+            justify-between => justify-content: space-between - écart entre les éléments par rapport à l'axe principal
+            gap => écart entre les éléments enfants
+            -->
             <img src="/site/media/ecoeatslogo.png" class="w-24 md:w-32" alt="logo Ecoeats">
+            <!--w-24 => width de l'image (largeur)
+            md:w-32 => media query + width augmentée si la largeur de l'écran dépasse les 768px-->
             <h1 class="text-2xl md:text-3xl font-bold text-green-900 text-center">Ecoeats, la bouffe c'est la vie, mais
                 c'est potable en bio aussi !</h1>
+                <!--text-2xl => font-size - taille du texte augmentée
+                md:text-3xl => media query + font-size - taille augmentée d'avantage si l'écran dépasse les 768px 
+                font-bold => font-weight - passe le texte en gras
+                text-green-900 => color - couleur du texte
+                text-center => text-align: center - centre le texte-->
             <ul class="flex gap-6">
-                <li><a href="#bottom"
-                        class="font-bold text-green-900 hover:text-white hover:bg-green-700 p-3 rounded transition">PIED
-                        DE PAGE</a></li>
-                <li><a href="#menu"
-                        class="font-bold text-green-900 hover:text-white hover:bg-green-700 p-3 rounded transition">COMMANDER</a>
+                <!--gap-6 => espace entre chaque lien -->
+                <li>
+                    <a href="#bottom" class="font-bold text-green-900 hover:text-white hover:bg-green-700 
+                    px-3 py-2 rounded">
+                        PIED DE PAGE
+                    </a>
+                    <!--hover:text-white => pseudo élément :hover + color, change la couleur du texte au survol de la souris
+                    hover:bg-green => même chose qu'au dessus mais avec la background color
+                    px-3, py-2 => padding vertical et horizontal
+                    rounded => border-radius - bords des éléments de la liste arrondis au hover de la souris
+                    -->
                 </li>
-                <li><a href="#contact"
-                        class="font-bold text-green-900 hover:text-white hover:bg-green-700 p-3 rounded transition">CONTACT</a>
+                <li>
+                    <a href="#menu" class="font-bold text-green-900 hover:text-white hover:bg-green-700 
+                    px-3 py-2 rounded">
+                        COMMANDER
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="font-bold text-green-900 hover:text-white hover:bg-green-700 
+                    px-3 py-2 rounded">
+                        CONTACT
+                    </a>
                 </li>
             </ul>
         </nav>
