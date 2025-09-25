@@ -44,7 +44,7 @@
             md:w-32 => media query + width augmentée si la largeur de l'écran dépasse les 768px-->
             <h1 class="text-2xl md:text-3xl font-bold text-green-900 text-center">Ecoeats, la bouffe c'est la vie, mais
                 c'est potable en bio aussi !</h1>
-                <!--text-2xl => font-size - taille du texte augmentée
+            <!--text-2xl => font-size - taille du texte augmentée
                 md:text-3xl => media query + font-size - taille augmentée d'avantage si l'écran dépasse les 768px 
                 font-bold => font-weight - passe le texte en gras
                 text-green-900 => color - couleur du texte
@@ -78,130 +78,129 @@
         </nav>
     </header>
     <!--section menu listant des produits avec photo et prix-->
-<!-- PRODUITS -->
-  <main id="menu" class="max-w-5xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
-    <!--max-w-5xl => max-width - largeur maximale des éléments
+    <!-- PRODUITS -->
+    <main id="menu" class="max-w-5xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <!--max-w-5xl => max-width - largeur maximale des éléments
     mx-auto => margin-inline: auto - gestion du centrage
     grid => display-grid - on utilise une grille pour le placement des images produit
     grid-cols-1 => les éléments sont en colonne de 1 de base
     sm-grid-cols-3 => les éléments sont disposés sur 3 colonnes à partir de 768px de largeur
     -->
-    <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl">
-      <!--
+        <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl">
+            <!--
         overflow-hidden => le débordement des images est masqué
        hover:shadow xl => augmente la taille de l'ombre au passage de la souris -->
-      <img src="/site/media/bouffe1.jpg" alt="Salade Tonton" 
-           class="w-full h-48 object-cover">
-           <!--w-full => width: 100% - largeur qui s'adapte en fonction de la hauteur
+            <img src="/site/media/bouffe1.jpg" alt="Salade Tonton" class="w-full h-48 object-cover">
+            <!--w-full => width: 100% - largeur qui s'adapte en fonction de la hauteur
            h-48 => height => hauteur fixe
            object-cover => object-fit: cover - l'image couvre l'espace disponible-->
-      <h2 class="p-4 text-lg font-bold text-green-700">Salade de Tonton</h2>
-    </article>
-    <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl">
-      <img src="/site/media/bouffe2.jpg" alt="Salade Tata" 
-           class="w-full h-48 object-cover">
-      <h2 class="p-4 text-lg font-bold text-green-700">Salade de Tata</h2>
-    </article>
-    <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl">
-      <img src="/site/media/bouffe3.jpg" alt="Salade Titi" 
-           class="w-full h-48 object-cover">
-      <h2 class="p-4 text-lg font-bold text-green-700">Salade de Titi</h2>
-    </article>
-  </main>
+            <h2 class="p-4 text-lg font-bold text-green-700">Salade de Tonton</h2>
+        </article>
+        <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl">
+            <img src="/site/media/bouffe2.jpg" alt="Salade Tata" class="w-full h-48 object-cover">
+            <h2 class="p-4 text-lg font-bold text-green-700">Salade de Tata</h2>
+        </article>
+        <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl">
+            <img src="/site/media/bouffe3.jpg" alt="Salade Titi" class="w-full h-48 object-cover">
+            <h2 class="p-4 text-lg font-bold text-green-700">Salade de Titi</h2>
+        </article>
+    </main>
 
-    <!--section à propos qui offre une brève description du service offert-->
-    <aside>
-        <h2>ET LES AUTRES, ILS EN PENSENT QUOI ?</h2>
-        <p>Vous trouverez chez nous des produits de qualité moyenne à un prix un peu moins moyen, mais ça en
-            vaut la
-            peine, c'est bio. Et si c'est bio, c'est bien !</p>
-        <figure>
+    <!--aside à propos qui offre une brève description du service offert-->
+    <aside class="max-w-4xl mx-auto p-6 mt-8 bg-white rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold text-green-800 mb-4">ET LES AUTRES, ILS EN PENSENT QUOI ?</h2>
+        <p class="text-gray-700 mb-6">
+            Vous trouverez chez nous des produits de qualité moyenne à un prix un peu moins moyen, mais ça en vaut la
+            peine,
+            c'est bio. Et si c'est bio, c'est bien !
+        </p>
+        <figure class="mb-6 border-l-4 border-green-400 pl-4">
+            <!--border-l-4 => bordure uniquement sur la gauche de 4px-->
             <blockquote>
-                <p>"Franchement, c'est mid"</p>
+                <p class="italic text-gray-800">"Franchement, c'est mid"</p>
+                <!--italic => font-style: italic -->
             </blockquote>
-            <figcaption>
-                <cite>Judicaël, quand il a testé notre gamme incroyable de produit</cite>
+            <figcaption class="mt-2 text-sm text-gray-600">
+                <cite>Judicaël, après avoir testé notre gamme incroyable de produits</cite>
             </figcaption>
         </figure>
-        <figure>
+        <figure class="mb-6 border-l-4 border-green-400 pl-4">
             <blockquote>
-                <p>"Dégueulasse, je recommande !"</p>
+                <p class="italic text-gray-800">"Dégueulasse, je recommande !"</p>
             </blockquote>
-            <figcaption>
-                <cite>Christine après avoir goûté notre salade Ecoeats !</cite>
+            <figcaption class="mt-2 text-sm text-gray-600">
+                — <cite>Christine après avoir goûté notre salade Ecoeats</cite>
             </figcaption>
         </figure>
-        <figure>
+        <figure class="mb-6 border-l-4 border-green-400 pl-4">
             <blockquote>
-                <p>Intoxication Alimentaire, j'ai eu la rondelle en sang pendant 3 jours, mais je reviendrai !</p>
+                <p class="italic text-gray-800">Intoxication alimentaire, j'ai eu la rondelle en sang pendant 3 jours,
+                    mais je reviendrai !</p>
             </blockquote>
-            <figcaption>
-                <cite>Pétrolain, qui s'est régalé avec la salade de tonton</cite>
+            <figcaption class="mt-2 text-sm text-gray-600">
+                — <cite>Pétrolain, après sa salade de Tonton</cite>
             </figcaption>
         </figure>
-    </aside> 
+    </aside>
+
     <section class="max-w-4xl mx-auto p-6 mt-6 bg-yellow-50 rounded-lg shadow-md">
-      <!-- mx-auto => permet de centrer le bloc-->
-      <h2 class="text-2xl font-bold text-green-800 mb-4">
-        VOUS VOULEZ COMMANDER ? SUIVEZ CES QUELQUES ÉTAPES
-      </h2>
-      <p class="mb-3 text-gray-700">
-        Remplissez le formulaire ci-dessous dans la section contact, ajoutez le produit à votre panier,
-        commandez, et c'est réglé !
-      </p>
-      <p class="mb-3 text-gray-700">
-        Profitez de notre très large gamme de choix (3 pour être précis) et régalez-vous parce que même si
-        c'est PAS BON, c'est BIO !
-      </p>
-      <p class="text-gray-700">
-        Pour les boissons, buvez de l'eau, c'est BIO</span>.
-      </p>
+        <!-- mx-auto => permet de centrer le bloc-->
+        <h2 class="text-2xl font-bold text-green-800 mb-4">
+            VOUS VOULEZ COMMANDER ? SUIVEZ CES QUELQUES ÉTAPES
+        </h2>
+        <p class="mb-3 text-gray-700">
+            Remplissez le formulaire ci-dessous dans la section contact, ajoutez le produit à votre panier,
+            commandez, et c'est réglé !
+        </p>
+        <p class="mb-3 text-gray-700">
+            Profitez de notre très large gamme de choix (3 pour être précis) et régalez-vous parce que même si
+            c'est PAS BON, c'est BIO !
+        </p>
+        <p class="text-gray-700">
+            Pour les boissons, buvez de l'eau, c'est BIO</span>.
+        </p>
     </section>
-     <!-- Formulaire -->
-  <section id="contact" class="max-w-4xl mx-auto p-6 mt-6">
-    <h2 class="text-xl font-bold text-green-800 mb-4">SELECTIONNEZ VOS PRODUITS ET PAYEZ ICI</h2>
-    <form class="bg-white p-6 rounded-lg shadow-lg flex flex-col gap-4">
-      <label for="name" class="font-bold">Nom :</label>
-      <input type="text" id="name" 
-             class="border border-gray-300 rounded p-2 focus:ring-green-400">
-<!--focus: => pseudo-élément focus : ne fonctionne que lorsqu'un élément spécifique est selectionné, dans notre cas un élément du formulaire
+    <!-- Formulaire -->
+    <section id="contact" class="max-w-4xl mx-auto p-6 mt-6">
+        <h2 class="text-xl font-bold text-green-800 mb-4">SELECTIONNEZ VOS PRODUITS ET PAYEZ ICI</h2>
+        <form class="bg-white p-6 rounded-lg shadow-lg flex flex-col gap-4">
+            <label for="name" class="font-bold">Nom :</label>
+            <input type="text" id="name" class="border border-gray-300 rounded p-2 focus:ring-green-400">
+            <!--focus: => pseudo-élément focus : ne fonctionne que lorsqu'un élément spécifique est selectionné, dans notre cas un élément du formulaire
 ring => box-shadow mais en plus opaque-->
-      <label for="prenom" class="font-bold">Prénom :</label>
-      <input type="text" id="prenom" 
-             class="border border-gray-300 rounded p-2 focus:ring-green-400">
+            <label for="prenom" class="font-bold">Prénom :</label>
+            <input type="text" id="prenom" class="border border-gray-300 rounded p-2 focus:ring-green-400">
 
-      <label for="plat" class="font-bold">Choisissez votre repas :</label>
-      <select id="plat" 
-              class="border border-gray-300 rounded p-2 focus:ring-green-400">
-        <option disabled selected>Choix du produit</option>
-        <option>La salade de Titi à 14€99</option>
-        <option>La salade de Tata à 15€99</option>
-        <option>La salade de Tonton à 16€99</option>
-      </select>
+            <label for="plat" class="font-bold">Choisissez votre repas :</label>
+            <select id="plat" class="border border-gray-300 rounded p-2 focus:ring-green-400">
+                <option disabled selected>Choix du produit</option>
+                <option>La salade de Titi à 14€99</option>
+                <option>La salade de Tata à 15€99</option>
+                <option>La salade de Tonton à 16€99</option>
+            </select>
 
-      <label for="message" class="font-bold">Instructions supplémentaires :</label>
-      <textarea id="message" rows="4" 
-                class="border border-gray-300 rounded p-2 focus:ring-green-400"></textarea>
+            <label for="message" class="font-bold">Instructions supplémentaires :</label>
+            <textarea id="message" rows="4" class="border border-gray-300 rounded p-2 focus:ring-green-400"></textarea>
 
-      <button type="submit" 
-              class="bg-green-600 text-white font-bold py-2 px-4 rounded 
+            <button type="submit" class="bg-green-600 text-white font-bold py-2 px-4 rounded 
                      hover:bg-green-700">
-        Payez en cliquant ici !
-      </button>
-    </form>
-  </section>
+                Payez en cliquant ici !
+            </button>
+        </form>
+    </section>
     <!--pied de page avec lien vers les pages secondaires, mention légales et réseaux sociaux-->
-  <footer id="bottom" class="bg-green-900 text-white text-center p-6 mt-8">
-    <p><a href="#top" class="hover:text-yellow-300">Retournez en haut de la page</a></p>
-    <ul class="flex justify-center gap-6 mt-4">
-      <li><a href="#" class="hover:text-yellow-300">FACEBOOK</a></li>
-      <li><a href="#" class="hover:text-yellow-300">INSTAGRAM</a></li>
-      <li><a href="#" class="hover:text-yellow-300">TIKEUTOK</a></li>
-    </ul>
-    <p class="mt-4 text-sm">Tous droits réservés ©</p>
-    <!--text:sm => font-size: small-->
-  </footer>
+    <footer id="bottom" class="bg-green-900 text-white text-center p-6 mt-8">
+        <p><a href="#top" class="hover:text-yellow-300">Retournez en haut de la page</a></p>
+        <ul class="flex justify-center gap-6 mt-4">
+            <li><a href="#" class="hover:text-yellow-300">FACEBOOK</a></li>
+            <li><a href="#" class="hover:text-yellow-300">INSTAGRAM</a></li>
+            <li><a href="#" class="hover:text-yellow-300">TIKEUTOK</a></li>
+        </ul>
+        <p class="mt-4 text-sm">Tous droits réservés ©</p>
+        <!--text:sm => font-size: small-->
+    </footer>
 </body>
+
 </html>
 
 <!--à faire :
