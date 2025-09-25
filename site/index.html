@@ -3,42 +3,56 @@
 <!--Metadonnées et titre-->
 
 <head>
-  <title>Ecoeats</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto+Condensed:wght@400;700&display=swap');
-    body { font-family: 'Roboto Condensed', sans-serif; }
-    h1, h2 { font-family: 'League Spartan', sans-serif; }
-  </style>
+    <title>Ecoeats</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        h1,
+        h2 {
+            font-family: 'League Spartan', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="bg-lime-50 text-gray-800">
     <!--En-tête et menu de navigation-->
 
-<header id="top" class="bg-gradient-to-r from-lime-400 to-yellow-300 p-6 shadow-md">
-    <nav class="flex flex-col md:flex-row items-center justify-between gap-6 max-w-6xl mx-auto">
-      <img src="/site/media/ecoeatslogo.png" class="w-24 md:w-32" alt="logo Ecoeats">
-      <h1 class="text-2xl md:text-3xl font-bold text-green-900 text-center">Ecoeats, la bouffe c'est la vie, mais c'est potable en bio aussi !</h1>
-      <ul class="flex gap-6">
-        <li><a href="#bottom" class="font-bold text-green-900 hover:text-white hover:bg-green-700 px-3 py-2 rounded transition">PIED DE PAGE</a></li>
-        <li><a href="#menu" class="font-bold text-green-900 hover:text-white hover:bg-green-700 px-3 py-2 rounded transition">COMMANDER</a></li>
-        <li><a href="#contact" class="font-bold text-green-900 hover:text-white hover:bg-green-700 px-3 py-2 rounded transition">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header id="top" class="bg-gradient-to-r from-lime-400 to-yellow-300 p-6 shadow-md">
+        <nav class="flex flex-col md:flex-row items-center justify-between gap-6 max-w-6xl mx-auto">
+            <img src="/site/media/ecoeatslogo.png" class="w-24 md:w-32" alt="logo Ecoeats">
+            <h1 class="text-2xl md:text-3xl font-bold text-green-900 text-center">Ecoeats, la bouffe c'est la vie, mais
+                c'est potable en bio aussi !</h1>
+            <ul class="flex gap-6">
+                <li><a href="#bottom"
+                        class="font-bold text-green-900 hover:text-white hover:bg-green-700 p-3 rounded transition">PIED
+                        DE PAGE</a></li>
+                <li><a href="#menu"
+                        class="font-bold text-green-900 hover:text-white hover:bg-green-700 p-3 rounded transition">COMMANDER</a>
+                </li>
+                <li><a href="#contact"
+                        class="font-bold text-green-900 hover:text-white hover:bg-green-700 p-3 rounded transition">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <!--section menu listant des produits avec photo et prix-->
-    <main id="menu">
-        <article>
-            <h2>Salade de Tonton</h2>
-            <img src="/site/media/bouffe1.jpg" alt="salade de légumes">
+    <main id="menu" class="max-w-6xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+            <img src="/site/media/bouffe1.jpg" alt="Salade Tonton" class="w-full h-48 object-cover">
+            <h2 class="p-4 text-lg font-bold text-green-700">Salade de Tonton</h2>
         </article>
-        <article>
-            <h2>Salade de Tata</h2>
-            <img src="/site/media/bouffe2.jpg" alt="salade de légumes">
+        <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+            <img src="/site/media/bouffe2.jpg" alt="Salade Tata" class="w-full h-48 object-cover">
+            <h2 class="p-4 text-lg font-bold text-green-700">Salade de Tata</h2>
         </article>
-        <article>
-            <h2>Salade de Titi</h2>
-            <img src="/site/media/bouffe3.jpg" alt="salade de légumes">
+        <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+            <img src="/site/media/bouffe3.jpg" alt="Salade Titi" class="w-full h-48 object-cover">
+            <h2 class="p-4 text-lg font-bold text-green-700">Salade de Titi</h2>
         </article>
     </main>
     <!--section à propos qui offre une brève description du service offert-->
