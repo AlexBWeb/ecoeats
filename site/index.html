@@ -139,35 +139,40 @@
                 <cite>Pétrolain, qui s'est régalé avec la salade de tonton</cite>
             </figcaption>
         </figure>
-    </aside>
-    <!--section QçM, explication du processus de commande-->
-    <section>
-        <h2>VOUS VOULEZ COMMANDEZ ? SUIVEZ CES QUELQUES ÉTAPES</h2>
-        <p>Remplissez le formulaire si dessous dans la section contact, ajoutez le produit à votre panier,
-            commandez, et
-            c'est réglé !</p>
-        <p>Profitez de notre très large gamme de choix (3 pour être précis) et régalez vous parce que même si c'est
-            pas
-            BON,
-            c'est BIO !</p>
-        <p>Pour les boissons, buvez de l'eau, c'est BIO</p>
-    </section>  <!-- FORMULAIRE -->
-  <section id="contact" class="max-w-4xl p-6 mt-6">
+    </aside> 
+    <section class="max-w-4xl mx-auto p-6 mt-6 bg-yellow-50 rounded-lg shadow-md">
+      <!-- mx-auto => permet de centrer le bloc-->
+      <h2 class="text-2xl font-bold text-green-800 mb-4">
+        VOUS VOULEZ COMMANDER ? SUIVEZ CES QUELQUES ÉTAPES
+      </h2>
+      <p class="mb-3 text-gray-700">
+        Remplissez le formulaire ci-dessous dans la section contact, ajoutez le produit à votre panier,
+        commandez, et c'est réglé !
+      </p>
+      <p class="mb-3 text-gray-700">
+        Profitez de notre très large gamme de choix (3 pour être précis) et régalez-vous parce que même si
+        c'est PAS BON, c'est BIO !
+      </p>
+      <p class="text-gray-700">
+        Pour les boissons, buvez de l'eau, c'est BIO</span>.
+      </p>
+    </section>
+     <!-- Formulaire -->
+  <section id="contact" class="max-w-4xl mx-auto p-6 mt-6">
     <h2 class="text-xl font-bold text-green-800 mb-4">SELECTIONNEZ VOS PRODUITS ET PAYEZ ICI</h2>
     <form class="bg-white p-6 rounded-lg shadow-lg flex flex-col gap-4">
-      <!-- flex flex-col gap-4 → champs empilés avec espace -->
       <label for="name" class="font-bold">Nom :</label>
       <input type="text" id="name" 
-             class="border border-gray-300 rounded p-2 focus:ring-2 focus:ring-green-400">
-<!--focus:ring-2 => pseudo-élément focus : ne fonctionne que lorsqu'un élément spécifique est selectionné, dans notre cas un élément du formulaire
+             class="border border-gray-300 rounded p-2 focus:ring-green-400">
+<!--focus: => pseudo-élément focus : ne fonctionne que lorsqu'un élément spécifique est selectionné, dans notre cas un élément du formulaire
 ring => box-shadow mais en plus opaque-->
       <label for="prenom" class="font-bold">Prénom :</label>
       <input type="text" id="prenom" 
-             class="border border-gray-300 rounded p-2 focus:ring-2 focus:ring-green-400">
+             class="border border-gray-300 rounded p-2 focus:ring-green-400">
 
       <label for="plat" class="font-bold">Choisissez votre repas :</label>
       <select id="plat" 
-              class="border border-gray-300 rounded p-2 focus:ring-2 focus:ring-green-400">
+              class="border border-gray-300 rounded p-2 focus:ring-green-400">
         <option disabled selected>Choix du produit</option>
         <option>La salade de Titi à 14€99</option>
         <option>La salade de Tata à 15€99</option>
@@ -176,7 +181,7 @@ ring => box-shadow mais en plus opaque-->
 
       <label for="message" class="font-bold">Instructions supplémentaires :</label>
       <textarea id="message" rows="4" 
-                class="border border-gray-300 rounded p-2 focus:ring-2 focus:ring-green-400"></textarea>
+                class="border border-gray-300 rounded p-2 focus:ring-green-400"></textarea>
 
       <button type="submit" 
               class="bg-green-600 text-white font-bold py-2 px-4 rounded 
