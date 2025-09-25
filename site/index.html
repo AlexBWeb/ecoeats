@@ -78,71 +78,74 @@
         </nav>
     </header>
     <!--section menu listant des produits avec photo et prix-->
-    <!-- PRODUITS -->
-    <main id="menu" class="max-w-5xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <!--max-w-5xl => max-width - largeur maximale des éléments
+    <div class="max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!--div présente uniquement pour rendre le contenu responsive => le aside à droite de l'écran quand 768px ou plus
+    max-w-5xl => max-width - largeur maximale des éléments
     mx-auto => margin-inline: auto - gestion du centrage
     grid => display-grid - on utilise une grille pour le placement des images produit
     grid-cols-1 => les éléments sont en colonne de 1 de base
     sm-grid-cols-3 => les éléments sont disposés sur 3 colonnes à partir de 768px de largeur
     -->
-        <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl">
-            <!--
+        <!-- PRODUITS -->
+<main id="menu" class="md:col-span-2 grid grid-cols-1 gap-6">
+            <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl">
+                <!--
         overflow-hidden => le débordement des images est masqué
        hover:shadow xl => augmente la taille de l'ombre au passage de la souris -->
-            <img src="/site/media/bouffe1.jpg" alt="Salade Tonton" class="w-full h-48 object-cover">
-            <!--w-full => width: 100% - largeur qui s'adapte en fonction de la hauteur
+                <img src="/site/media/bouffe1.jpg" alt="Salade Tonton" class="w-full h-48 object-cover">
+                <!--w-full => width: 100% - largeur qui s'adapte en fonction de la hauteur
            h-48 => height => hauteur fixe
            object-cover => object-fit: cover - l'image couvre l'espace disponible-->
-            <h2 class="p-4 text-lg font-bold text-green-700">Salade de Tonton</h2>
-        </article>
-        <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl">
-            <img src="/site/media/bouffe2.jpg" alt="Salade Tata" class="w-full h-48 object-cover">
-            <h2 class="p-4 text-lg font-bold text-green-700">Salade de Tata</h2>
-        </article>
-        <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl">
-            <img src="/site/media/bouffe3.jpg" alt="Salade Titi" class="w-full h-48 object-cover">
-            <h2 class="p-4 text-lg font-bold text-green-700">Salade de Titi</h2>
-        </article>
-    </main>
+                <h2 class="p-4 text-lg font-bold text-green-700">Salade de Tonton</h2>
+            </article>
+            <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl">
+                <img src="/site/media/bouffe2.jpg" alt="Salade Tata" class="w-full h-48 object-cover">
+                <h2 class="p-4 text-lg font-bold text-green-700">Salade de Tata</h2>
+            </article>
+            <article class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl">
+                <img src="/site/media/bouffe3.jpg" alt="Salade Titi" class="w-full h-48 object-cover">
+                <h2 class="p-4 text-lg font-bold text-green-700">Salade de Titi</h2>
+            </article>
+        </main>
 
-    <!--aside à propos qui offre une brève description du service offert-->
-    <aside class="max-w-4xl mx-auto p-6 mt-8 bg-white rounded-lg shadow-md">
-        <h2 class="text-2xl font-bold text-green-800 mb-4">ET LES AUTRES, ILS EN PENSENT QUOI ?</h2>
-        <p class="text-gray-700 mb-6">
-            Vous trouverez chez nous des produits de qualité moyenne à un prix un peu moins moyen, mais ça en vaut la
-            peine,
-            c'est bio. Et si c'est bio, c'est bien !
-        </p>
-        <figure class="mb-6 border-l-4 border-green-400 pl-4">
-            <!--border-l-4 => bordure uniquement sur la gauche de 4px-->
-            <blockquote>
-                <p class="italic text-gray-800">"Franchement, c'est mid"</p>
-                <!--italic => font-style: italic -->
-            </blockquote>
-            <figcaption class="mt-2 text-sm text-gray-600">
-                <cite>Judicaël, après avoir testé notre gamme incroyable de produits</cite>
-            </figcaption>
-        </figure>
-        <figure class="mb-6 border-l-4 border-green-400 pl-4">
-            <blockquote>
-                <p class="italic text-gray-800">"Dégueulasse, je recommande !"</p>
-            </blockquote>
-            <figcaption class="mt-2 text-sm text-gray-600">
-                — <cite>Christine après avoir goûté notre salade Ecoeats</cite>
-            </figcaption>
-        </figure>
-        <figure class="mb-6 border-l-4 border-green-400 pl-4">
-            <blockquote>
-                <p class="italic text-gray-800">Intoxication alimentaire, j'ai eu la rondelle en sang pendant 3 jours,
-                    mais je reviendrai !</p>
-            </blockquote>
-            <figcaption class="mt-2 text-sm text-gray-600">
-                — <cite>Pétrolain, après sa salade de Tonton</cite>
-            </figcaption>
-        </figure>
-    </aside>
-
+        <!--aside à propos qui offre une brève description du service offert-->
+        <aside class="max-w-4xl mx-auto p-6 mt-8 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-green-800 mb-4">ET LES AUTRES, ILS EN PENSENT QUOI ?</h2>
+            <p class="text-gray-700 mb-6">
+                Vous trouverez chez nous des produits de qualité moyenne à un prix un peu moins moyen, mais ça en vaut
+                la
+                peine,
+                c'est bio. Et si c'est bio, c'est bien !
+            </p>
+            <figure class="mb-6 border-l-4 border-green-400 pl-4">
+                <!--border-l-4 => bordure uniquement sur la gauche de 4px-->
+                <blockquote>
+                    <p class="italic text-gray-800">"Franchement, c'est mid"</p>
+                    <!--italic => font-style: italic -->
+                </blockquote>
+                <figcaption class="mt-2 text-sm text-gray-600">
+                    <cite>Judicaël, après avoir testé notre gamme incroyable de produits</cite>
+                </figcaption>
+            </figure>
+            <figure class="mb-6 border-l-4 border-green-400 pl-4">
+                <blockquote>
+                    <p class="italic text-gray-800">"Dégueulasse, je recommande !"</p>
+                </blockquote>
+                <figcaption class="mt-2 text-sm text-gray-600">
+                    — <cite>Christine après avoir goûté notre salade Ecoeats</cite>
+                </figcaption>
+            </figure>
+            <figure class="mb-6 border-l-4 border-green-400 pl-4">
+                <blockquote>
+                    <p class="italic text-gray-800">Intoxication alimentaire, transit compliqué pendant 3 jours,
+                        mais je reviendrai !</p>
+                </blockquote>
+                <figcaption class="mt-2 text-sm text-gray-600">
+                    — <cite>Pétrolain, après sa salade de Tonton</cite>
+                </figcaption>
+            </figure>
+        </aside>
+    </div>
     <section class="max-w-4xl mx-auto p-6 mt-6 bg-yellow-50 rounded-lg shadow-md">
         <!-- mx-auto => permet de centrer le bloc-->
         <h2 class="text-2xl font-bold text-green-800 mb-4">
@@ -154,7 +157,7 @@
         </p>
         <p class="mb-3 text-gray-700">
             Profitez de notre très large gamme de choix (3 pour être précis) et régalez-vous parce que même si
-            c'est PAS BON, c'est BIO !
+            c'est PAS toujours FRAIS, c'est BIO !
         </p>
         <p class="text-gray-700">
             Pour les boissons, buvez de l'eau, c'est BIO</span>.
@@ -202,8 +205,3 @@ ring => box-shadow mais en plus opaque-->
 </body>
 
 </html>
-
-<!--à faire :
-formulaire centré en grand écran
-commentaires  avis client à droite de produits en grand écran
-ajout icones RS-->
